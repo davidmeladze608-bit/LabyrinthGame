@@ -1,0 +1,9 @@
+ Настраиваем связи между локациями через locations[индекс].addConnection(сосед).
+Тут мы берём конкретную коробочку по её номеру (например, locations) и просим
+лежащую в ней локацию подружиться с другой (addConnection(1)).
+Ошибка раньше была в том, что мы пытались сказать «подружись» всему списку коробочек сразу,
+а дружить умеют только сами локации внутри них.
+locations.addConnection(1);
+locations[1](https://www.geeksforgeeks.org/cpp/how-to-access-element-in-vector-using-index-in-cpp/).addConnection(0);
+locations[1](https://www.geeksforgeeks.org/cpp/how-to-access-element-in-vector-using-index-in-cpp/).addConnection(2);
+locations[2](https://stackoverflow.com/questions/39765112/error-c2039-vector-is-not-a-member-of-std).addConnection(1);
