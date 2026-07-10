@@ -1,0 +1,20 @@
+class Location {
+private:
+    std::vector<int> connections;
+    // другие поля...
+
+public:
+       Было:
+    // Location() {} 
+
+      Стало:
+    Location() : connections() {
+        // connections() гарантирует, что вектор будет пустым
+          Можно добавить логирование для отладки:
+        // std::cout << "Location created with empty connections." << std::endl;
+    }
+
+    void addConnection(int otherIndex) {
+        connections.push_back(otherIndex);
+    }
+};
