@@ -1,0 +1,11 @@
+void addConnection(int otherIndex) {
+       Проверка на дубликат
+    for (int existing : connections) {
+        if (existing == otherIndex) {
+            return; // Связь уже есть, выходим
+        }
+    }
+    
+       Если не нашли дубликат, добавляем
+    connections.push_back(otherIndex);
+}
