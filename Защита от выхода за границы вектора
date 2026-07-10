@@ -1,0 +1,14 @@
+  Было:
+locations.addConnection(1);
+locations.addConnection(2);
+locations.addConnection(0);
+
+  Стало:
+if (locations.size() >= 3) {
+    locations.addConnection(1);
+    locations.addConnection(2);
+    locations.addConnection(0);
+} else {
+      Логирование ошибки или обработка ситуации, когда локаций недостаточно
+    std::cerr << "Error: Not enough locations initialized. Expected at least 3." << std::endl;
+}
